@@ -1,7 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --cor-busca: #5913b441;
+
+  --cor-hover-texto: #5913b4;
+
+  --cor-primaria-fonte: #3b1270;
 }
 
 * {
@@ -16,37 +20,51 @@ body {
 h1,
 h2,
 p {
+  color: var(--cor-primaria-fonte);
+  font-weight: 400;
 }
 
+.margin-site {
+}
+
+/*Início Cabeçalho*/
 header {
   width: 100%;
 }
 
 nav {
-  padding: 1;
+  padding: 1%;
 }
 
-/* Classe genérica para Display Flex */
+/*Classe genérica para Display Flex*/
 .display-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/* Gap Utilizado no Cabeçalho  */
-.gapCabeçalho {
+/*Gap utilizado no cabeçalho*/
+.gap-cabecalho {
   gap: 20%;
 }
 
-.gapCabeçalho-botoes {
+/*Gap entre os botões do cabeçalho*/
+.gap-cabecalho-botoes {
   gap: 15%;
 }
 
+/*Borda do campo de Busca*/
 .borda-busca {
   border: 1px solid var(--cor-busca);
-  padding: 5px;
+  padding: 5px 10px;
+  gap: 3rem;
 }
 
+.borda-busca:hover {
+  border: 1px solid var(--cor-hover-texto);
+}
+
+/*Input de busca no Blog*/
 .input-busca {
   border: none;
   outline: none;
@@ -56,44 +74,71 @@ nav {
 .input-busca::placeholder {
   color: var(--cor-busca);
 }
+/*Fim input de busca no Blog*/
 
+/*Imagem da Lupa no input de busca*/
 .botao-busca {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
+/*Removendo todo o estilo da Tag A*/
 .remove-decoration {
   text-decoration: none;
 }
 
+/*Removendo a quebra de linha*/
 .quebra-de-linha {
   white-space: nowrap;
 }
 
+/*Display Flex do ambiente Virtual*/
 .display-flex-ambiente-virtual {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-/* Versão Tablet */
+/*Versão Tablet*/
 @media screen and (max-width: 1024px) {
-  flex-wrap: ;
+  .display-flex {
+    flex-wrap: wrap;
+  }
+
+  .margin-responsiva {
+    margin: 5% 0;
+  }
+
+  .tamanho-botao-cabecalho {
+    width: 70px;
+    height: auto;
+    text-align: center;
+  }
+
+  .margin-botao-cabecalho {
+    margin: 10% 0;
+  }
 }
 
-.margen-responsiva {
+/*Versão Mobile*/
+
+/*Fim Cabeçalho*/
+
+/* Início Informações*/
+.container-infomacoes {
+  margin: 5% 17%;
 }
 
-.tamanho-botao-cabeçalho {
-  width: 70px;
-  height: auto;
-  text-align: center;
+h1 {
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1%;
 }
 
-.margem-botao-cabeçalho {
-  margin: 10% 0;
+.container-texto-infomacoes {
+  display: flex;
 }
 
-/* Versão Mobile  */
-
-/* Fim do Cabeçalho */
-
-/* Seção Apresentação */
+/* Fim Informações */

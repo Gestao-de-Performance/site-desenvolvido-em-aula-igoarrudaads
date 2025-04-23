@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+:root {
+  --cor-busca: #5913b441;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+p {
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  padding: 1;
+}
+
+/* Classe genérica para Display Flex */
+.display-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Gap Utilizado no Cabeçalho  */
+.gapCabeçalho {
+  gap: 20%;
+}
+
+.gapCabeçalho-botoes {
+  gap: 15%;
+}
+
+.borda-busca {
+  border: 1px solid var(--cor-busca);
+  padding: 5px;
+}
+
+.input-busca {
+  border: none;
+  outline: none;
+  color: #5913b489;
+}
+
+.input-busca::placeholder {
+  color: var(--cor-busca);
+}
+
+.botao-busca {
+}
+
+.remove-decoration {
+  text-decoration: none;
+}
+
+.quebra-de-linha {
+  white-space: nowrap;
+}
+
+.display-flex-ambiente-virtual {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Versão Tablet */
+@media screen and (max-width: 1024px) {
+  flex-wrap: ;
+}
+
+.margen-responsiva {
+}
+
+.tamanho-botao-cabeçalho {
+  width: 70px;
+  height: auto;
+  text-align: center;
+}
+
+.margem-botao-cabeçalho {
+  margin: 10% 0;
+}
+
+/* Versão Mobile  */
+
+/* Fim do Cabeçalho */
+
+/* Seção Apresentação */
