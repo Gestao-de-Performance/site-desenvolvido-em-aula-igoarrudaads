@@ -1,138 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --cor-busca: #5913b441;
+:root {
+  --cor-busca: #5913b441;
 
-    --cor-hover-texto: #5913b4;
+  --cor-hover-texto: #5913b4;
 
-    --cor-primaria-fonte: #3B1270;
-    --cor-branco-fonte: #FFFFFF; 
+  --cor-primaria-fonte: #3b1270;
 
-    --cor-background-cursos: #3B1270;
+  --cor-branco-fonte: #ffffff;
 
-    --cor-background-botao: #8E35FF;
+  --cor-background-cursos: #3b1270;
+
+  --cor-background-botao: #8e35ff;
+
+  --cor-texto-categoria: ;
+
+  --cor-background-rodape: #f5f5f5;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, p{
-    color: var(--cor-primaria-fonte);
-    font-weight: 400;
+h1,
+h2,
+p {
+  color: var(--cor-primaria-fonte);
+  font-weight: 400;
 }
 
-.marginSite{
-    margin:7% 17%;
+.marginSite {
+  margin: 5% 20%;
 }
 
-@media screen and (max-width: 1024px){
-    .marginSite {
-        margin: 5% 14%;
-    }
+@media screen and (max-width: 1024px) {
+  .marginSite {
+    margin: 5% 14%;
+  }
 }
 
-.corTextoBranco{
-    color: var(--cor-branco-fonte);
+.corTextoBranco {
+  color: var(--cor-branco-fonte);
 }
 
 /*Início Cabeçalho*/
-header{
-    width: 100%;
+header {
+  width: 100%;
 }
 
-nav{
-    padding: 1%;
+nav {
+  margin-top: 25px;
+  padding: 1%;
 }
 
 /*Classe genérica para Display Flex*/
-.displayFlex{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.displayFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*Gap utilizado no cabeçalho*/
-.gapCabecalho{
-    gap: 20%;
+.gapCabecalho {
+  gap: 20%;
 }
 
 /*Gap entre os botões do cabeçalho*/
-.gapCabecalhoBotoes{
-    gap: 15%;
+.gapCabecalhoBotoes {
+  gap: 15%;
 }
 
 /*Borda do campo de Busca*/
-.bordaBusca{
-    border: 1px solid var(--cor-busca);
-    padding: 5px 10px;
-    gap: 3rem;
+.bordaBusca {
+  border: 1px solid var(--cor-busca);
+  padding: 5px 10px;
+  gap: 3rem;
 }
 
-.bordaBusca:hover{
-    border: 1px solid var(--cor-hover-texto);
+.bordaBusca:hover {
+  border: 1px solid var(--cor-hover-texto);
 }
 
 /*Input de busca no Blog*/
-.inputBusca{
-    border: none;
-    outline: none;
-    color: #5913b489;
+.inputBusca {
+  border: none;
+  outline: none;
+  color: #5913b489;
 }
 
-.inputBusca::placeholder{
-    color: var(--cor-busca);
+.inputBusca::placeholder {
+  color: var(--cor-busca);
 }
 /*Fim input de busca no Blog*/
 
 /*Imagem da Lupa no input de busca*/
-.botaoBusca{
-    border: none;
-    background: none;
-    cursor:pointer;
+.botaoBusca {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 /*Removendo todo o estilo da Tag A*/
-.removeDecoration{
-    text-decoration: none;
+.removeDecoration {
+  text-decoration: none;
 }
 
 /*Removendo a quebra de linha*/
-.quebraDeLinha{
-    white-space: nowrap;
+.quebraDeLinha {
+  white-space: nowrap;
 }
 
 /*Display Flex do ambiente Virtual*/
-.displayFlexAmbienteV{
-    display:flex;
-    align-items:center;
-    gap: 5px;
+.displayFlexAmbienteV {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /*Versão Tablet*/
-@media screen and (max-width: 1024px){
-    .displayFlex{
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1024px) {
+  .displayFlex {
+    flex-wrap: wrap;
+  }
 
-    .marginResponsiva{
-        margin: 5% 0;
-    }
+  .marginResponsiva {
+    margin: 5% 0;
+  }
 
-    .tamanhoBotaoCabecalho{
-        width: 70px;
-        height: auto;
-        text-align: center;;
-    }
+  .tamanhoBotaoCabecalho {
+    width: 70px;
+    height: auto;
+    text-align: center;
+  }
 
-    .marginBotaoCabecalho{
-        margin: 10% 0;
-    }
+  .marginBotaoCabecalho {
+    margin: 10% 0;
+  }
 }
 
 /*Versão Mobile*/
@@ -141,134 +149,220 @@ nav{
 
 /*Início Informações*/
 
-h1{
-    opacity: 0.8;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 1%;
+h1 {
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1%;
 }
 
-.containerTextoInformacoes{
-    display: flex;
+.containerTextoInformacoes {
+  display: flex;
 }
 
-.textoInformacoes{
-    max-width: 237px;
+.textoInformacoes {
+  max-width: 237px;
 }
 
-.containerTextoInformacoes{
-    display: flex;
-    justify-content: space-between;
-    gap: 4%;
-    align-items: flex-end;
+.containerTextoInformacoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+  align-items: flex-end;
 }
 
-.subtituloInformacoes{
-    font-size:6.5rem;
+.subtituloInformacoes {
+  font-size: 6rem;
 }
 
-.imgInformacoes{
-    height: 254px
+.imgInformacoes {
+  height: 254px;
 }
 
 /*Tablet*/
-@media screen and (max-width: 1024px){
-    .containerTextoInformacoes{
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1024px) {
+  .containerTextoInformacoes {
+    flex-wrap: wrap;
+  }
 
-    .subtituloInformacoes {
-        font-size: 4rem;
-    }
+  .subtituloInformacoes {
+    font-size: 4rem;
+  }
 
-    .imgInformacoes{
-        display: none;
-    }
+  .imgInformacoes {
+    display: none;
+  }
 
-    .textoInformacoes {
-        max-width: 80%;
-        margin-top: 5%;
-    }
+  .textoInformacoes {
+    max-width: 80%;
+    margin-top: 5%;
+  }
 }
 
 /*Fim Informações*/
 
 /*Início Cursos*/
-.backgroundContainerCursos{
-    background-color: var(--cor-background-cursos);
+.backgroundContainerCursos {
+  background-color: var(--cor-background-cursos);
 }
 
-.containerExternoCursos{
-    display: flex;
+.containerExternoCursos {
+  display: flex;
 }
 
-.posicaoPersonagem{
-    position: relative;
-    top: -70px;
+.posicaoPersonagem {
+  position: relative;
+  top: -70px;
 }
 
-.marginContainerEscolhaCursos{
-    margin: 4% 2%;
+.marginContainerEscolhaCursos {
+  margin: 4% 2%;
 }
 
-.subtituloEscolhaCurso{
-    font-size: 1.5rem;
-    font-weight: 500;
+.subtituloEscolhaCurso {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.containerEscolhaCursos{
-    display: flex;
-    gap: 3%;
-    align-items: center;
-    padding: 2% 4%;
-    margin-top: 5%;
-    margin-bottom: 8%;
-    background-color: rgba(255, 255, 255, 0.4);
-    min-width: 495px;
-
+.containerEscolhaCursos {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  padding: 2% 4%;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  background-color: rgba(255, 255, 255, 0.4);
+  min-width: 495px;
 }
 
-.containerBotoesEscolhaCursos{
-    display: flex;
-    align-items: center;
-    gap: 15%;
+.containerBotoesEscolhaCursos {
+  display: flex;
+  align-items: center;
+  gap: 15%;
 }
 
-.botoesEscolhaCursos{
-    border: none;
-    background: none;
-    cursor:pointer;
+.botoesEscolhaCursos {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.containerInternoCursos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8%;
+.containerInternoCursos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8%;
 }
 
-.marginSkillCurso{
-    margin: 10% 0;
+.marginSkillCurso {
+  margin: 10% 0;
 }
 
-.marginTextoSkill{
-    margin: 2% 0;
+.marginTextoSkill {
+  margin: 2% 0;
 }
 /*Fim Cursos*/
 
 /*Inicio Botão Inscrever-se*/
-.posicionamentoBotaoInscrever{
-    position: relative;
-    margin: 0 17%;
-    top: -175px;
+.posicionamentoBotaoInscrever {
+  position: relative;
+  margin: 0 17%;
+  top: -140px;
 }
 
-.botaoInscreverSe{
-    width: 100%;
-    display: block;
-    background-color: var(--cor-background-botao);
-    text-align: center;
-    padding: 2%;
-    font-size: 2rem;
+.botaoInscreverSe {
+  width: 100%;
+  display: block;
+  background-color: var(--cor-background-botao);
+  text-align: center;
+  padding: 2%;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
 }
 /*Fim Botão Inscrever-se*/
+
+/* Início Titulo Cursos Gratuitos */
+.tituloCursosGratuitos {
+  margin-bottom: 3%;
+  margin-top: -5%;
+  font-size: 2rem;
+}
+
+.botaoCursosGratuitos {
+  transition: 0.3s;
+  width: 49%;
+}
+
+.botaoCursosGratuitos:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .botaoCursosGratuitos {
+    width: 49%;
+  }
+}
+
+/* Fim Cursos Gratuitos */
+
+/* Início Blog */
+
+.tituloBlog {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.tituloBlog strong {
+  color: var(--cor-background-botao);
+}
+
+.tituloPostBlog {
+  padding: 5% 4% 10%;
+}
+
+.botaoBlog {
+  max-width: 340px;
+  min-height: 590px;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.containerPostBlog {
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoriaPostBlog {
+  color: var(--cor-texto-categoria);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.leituraPostBlog {
+  opacity: 0.8;
+}
+
+/* Fim Blog */
+
+/* Início Rodapé */
+footer {
+  background-color: var(--cor-background-rodape);
+  padding: 0.5%;
+}
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.containerRedesSociais {
+  min-width: 177px;
+}
+
+.logoRodape {
+}
+
+.marginRodape {
+  margin-top: 5;
+}
+/* Fim Rodapé */
